@@ -31,9 +31,14 @@ class Settings extends Model
     public $sync = true;
 
     /**
-     * @var string
+     * @var array
      */
     public $mappings = [];
+
+    /**
+     * @var array
+     */
+    public $indexSettings = [];
 
     /* @var string */
     public $application_id = '';

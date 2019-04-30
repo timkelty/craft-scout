@@ -35,4 +35,7 @@ return [
     'mappings'       => [
 
     ],
+    'indexSettings' => [
+        
+    ]
 ];

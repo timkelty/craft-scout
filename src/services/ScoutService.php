@@ -103,6 +103,22 @@ class ScoutService extends Component
     }
 
     /**
+     * Returns an array of Algolia index settings.
+     *
+     * @return AlgoliaIndex[]
+     */
+    public function getIndexSettings($index = null)
+    {
+        $indexSettings = $this->settings->indexSettings;
+
+        if (is_empty($index)) {
+            return $indexSettings;
+        }
+
+        return $indexSettings[$index];
+    }
+
+    /**
      * Passes the supplied elements to each configured index.
      *
      * @param $elements array
